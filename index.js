@@ -18,7 +18,8 @@ app.get('/cacca/:molla/:dura',(req,res)=>{
 //fa quello interno grande quando path = /profile
 app.get('/profile',(req,res)=>{
     console.log('Profilo di cacca')
-    res.send('Profilo')
+    console.log("Il campo nome query è: " + req.query.nome)
+    res.send("Benvenuto "+req.query.nome)
 })
 
 app.listen(8080,()=>{
