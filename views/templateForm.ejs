@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head> <title><% topicHead %></title></head>
+    <body>
+        <form action="localhost:8080/form" method="POST">
+            <input type="text" name="fname" value="" placeholder="Inserisci qui il tuo nome...">
+            <br>
+            <input type="text" name="lname" value="" placeholder="Inserisci qui il tuo cognome...">
+            <br>
+            <input type="submit" value="SUBMIT">
+        </form>    
+            <div> Nome: <%= utente.nome %> Cognome: <%= utente.cognome %> </div>
+    </body>
+</html>
