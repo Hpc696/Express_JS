@@ -3,12 +3,12 @@ html
         title=title 
     body 
         h1=message
-        <form action="localhost:8080" method='POST' id='container'>
+        form(action="localhost:8080" method='POST')  
         input(type="text" name='nome' value=' ' placeholder='Inserisci qui il nome')
-        br
+        p | 
         input(type="text" name='cognome' value=' ' placeholder='Inserisci qui il cognome')
-        br
+        p | 
         input(type="submit", value="INVIA")
-        </form>
+        
         br
         h2=nome
